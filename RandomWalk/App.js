@@ -46,14 +46,14 @@ class Walker {
   display(ctx) {
     ctx.lineCap = "round";
     ctx.strokeStyle = "black";
-    ctx.lineWidth = 4;
+    ctx.lineWidth = 2;
     ctx.beginPath();
     ctx.moveTo(this.x, this.y);
     ctx.lineTo(this.x, this.y);
     ctx.stroke();
   }
   walk() {
-    var size = 20;
+    var size = 4;
     var choice = Math.floor(Math.random() * 4);
     if (choice === 0) {
       this.x += size;
